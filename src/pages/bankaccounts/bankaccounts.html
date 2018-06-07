@@ -1,0 +1,46 @@
+<!--
+  Generated template for the BankaccountsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-title><header name="الحسابات البنكية"></header></ion-title>
+</ion-header>
+
+<ion-content>
+  <div *ngFor="let account of info" class="totdiv">
+      <ion-row >
+          <ion-col col-3 style="padding-top: 20px;">
+
+
+            <div   [ngStyle]="{'background-image': 'url('+account.imge+')',
+      'background-repeat': 'no-repeat','padding': '18px', 'position': 'relative',
+    'left': '70px'
+      }">
+
+              <img /></div>
+
+
+
+          </ion-col>
+          <ion-col col-9><h4>{{account.bank_name}}</h4></ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col col-5><p>اسم صاحب الحساب</p></ion-col>
+          <ion-col col-2><p> : </p></ion-col>
+          <ion-col col-5><p>{{account.owner_name}}</p></ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col col-5><p>رقم الحساب </p></ion-col>
+          <ion-col col-2><p> : </p></ion-col>
+          <ion-col col-5><p>{{account.account_no}}</p></ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col col-5><p>السويفت كود</p></ion-col>
+          <ion-col col-2><p> : </p></ion-col>
+          <ion-col col-5><p>{{account.swift_code}}</p></ion-col>
+      </ion-row>
+  </div>
+</ion-content>
+

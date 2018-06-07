@@ -1,0 +1,23 @@
+<ion-header>
+
+
+    <ion-title><header name=grade></header></ion-title>
+
+
+</ion-header>
+<ion-content >
+<p class="topp">grade</p>
+
+<ion-row  class="controw">
+  <ion-col *ngFor="let subj of subs" col-6>
+    <div (click)="details(subj)">
+      <div  class="newdiv" [ngStyle]="{'background-image': 'url('+subj.image+')'}">
+
+        <img /></div>
+        <br>
+      
+     <h6>subj.name</h6>
+   </div>
+  </ion-col>
+</ion-row>
+</ion-content>

@@ -1,0 +1,87 @@
+page-login {
+.toolbar-background{
+        background: $topcolor;
+    }
+    header .menu  , header .bar-buttons ,  header .notify , header p ,header .reddiv{
+        display: none !important
+    }
+    .topdiv{
+        text-align: center;
+    background: white;
+    width: 25%;
+    margin: -35px auto 15px;
+    padding: 10px 0px;
+    border-radius: 50%;
+
+    }
+    h3{
+        margin: 0;
+        color: gray
+    }
+
+    .forma {
+        padding-top: 30px;
+      //position: relative;
+        background: white;
+        width: 85%;
+        margin: auto;
+        height: 400px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 17px 0px grey;
+        text-align: center
+    }
+
+    .enter{
+        font-size: 22px;
+        color: white;
+        font-weight: normal;
+        height: 40px;
+        border-radius: 25px;
+        padding: 10px;
+        /* margin-top: 20px; */
+        font-family: cairobold;
+        background-color: $buttonBack;
+        width: 45%;
+        margin: 50px auto 20px;
+    }
+    .logitem{
+        height: 70px;
+        margin: 0 auto !important;
+        width: 90%;
+        max-width: 90%;
+        padding: 0 !important;
+        position: static;
+
+    }
+   .img {
+      /* max-width: 100%; */
+      width: 75%;
+      height: 75%;
+      border: 0;
+  }
+    .text-input-md ,.text-input-ios{
+        direction: rtl;
+        height: 38px;
+    }
+
+    .item-md.item-block .item-inner{
+        padding-right: 0;
+        border-bottom: 1px solid gray
+    }
+
+
+
+    .btn{
+      color: #545353;
+      font-size: 17px;
+
+    }
+  #forgetPassDiv{
+    margin-left: 21%;
+    margin-right: 21%;
+    padding: initial;
+    //position: absolute;
+    //background: red;
+  }
+
+}

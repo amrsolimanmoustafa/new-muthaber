@@ -1,0 +1,100 @@
+<ion-header>
+    <ion-title><header></header></ion-title>
+</ion-header>
+
+
+<ion-content >
+
+    <ion-row class="titlerow">
+        <ion-col col-7><h4>subName</h4></ion-col>
+        <ion-col col-5>
+
+            <div [ngStyle]="{'background-image': 'url('+subImage+')',
+      'background-repeat': 'no-repeat','padding': '18px', 'position': 'relative', 'background-size': 'contain',
+      ' height':'100%','width':'100%'
+      }">
+              <img />
+            </div>
+
+        </ion-col>
+    </ion-row>
+  <div *ngFor="let timeline of timelineArr;let i=index">
+    <!--<div  *ngFor="let lesson of timeline.lesson;let l=index" class="timeline">-->
+   
+
+    <div    *ngIf="timeline.test.length>0" class="timeline" (click)="test(timeline)">
+            <div    *ngIf="timeline.test[0].student_tests.length==0"  class="container left">
+                <div class="lesson">
+                    <ion-row>
+                        <ion-col col-1 style="padding-top: 18px;" ><img height="25px" src="assets/imgs/exam.png"></ion-col>
+                        <ion-col col-5>
+                            <div>
+                                <p style="font-size: 15px;    margin: 10px !important;
+                                font-weight:bold" >{{timeline.week}}</p>
+                              
+                            </div>
+                        </ion-col>
+                        <ion-col col-3>
+                            <ion-row class="raterow">
+                          
+                            </ion-row>
+                        </ion-col>
+                        <ion-col  col-3 style="padding-top: 15px;color:#017c9a;    text-align: center;">
+                            <p style="border: 1px solid #25b7d3;
+                            text-align: center;
+
+                            border-radius: 10px;">
+                            اختبر
+                            </p>
+                        </ion-col>
+                    </ion-row>
+                </div>
+            </div>
+
+
+
+
+      <div    *ngIf="timeline.test[0].student_tests.length>0"  class="conttrue left">
+        <div class="lesson">
+          <ion-row>
+            <ion-col col-1 style="padding-top: 18px;" ><img height="25px" src="assets/imgs/exam.png"></ion-col>
+            <ion-col col-5>
+              <div>
+                <p style="font-size: 15px;font-weight:bold" >timeline.week</p>
+               
+              </div>
+            </ion-col>
+            <ion-col col-3>
+              <ion-row class="raterow">
+               
+              </ion-row>
+            </ion-col>
+            <ion-col  col-3 style="padding-top: 15px;color:#017c9a;    text-align: center;">
+              <p style="border: 1px solid #25b7d3;
+              text-align: center;
+              border-radius: 10px;">
+                اختبر
+              </p>
+            </ion-col>
+          </ion-row>
+        </div>
+      </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+  </div>
+</ion-content>

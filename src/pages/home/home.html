@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-title>
+    <header></header>
+  </ion-title>
+
+</ion-header>
+
+<ion-content>
+  <ion-tabs  tabbarPlacement="top"  primary>
+    <ion-tab tabIcon="card" tabTitle="Questions" [root]="tab1" [(rootParams)]="cardSetId"></ion-tab>
+    <ion-tab tabIcon="stats" tabTitle="Statistics" [root]="tab2" [rootParams]="cardSetId"></ion-tab>
+    <ion-tab tabIcon="settings" tabTitle="Settings" [root]="tab3" [rootParams]="cardSetId"></ion-tab>
+  </ion-tabs> 
+</ion-content>

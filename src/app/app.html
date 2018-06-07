@@ -1,0 +1,31 @@
+<ion-menu [content]="nav" side="right">
+    <ion-content>
+        <ion-row>
+            <ion-col col-4>
+                <div class="micon" (click)="closeMenu()">
+                    <ion-icon   name="menu" ></ion-icon>
+                </div>
+            </ion-col>
+            <ion-col col-8>
+                <div (click)="goHomePage()">
+                    <img class="width: 75%;
+      height: 75%;
+      border: 0;" src="assets/imgs/toplogo.png"><br>
+                    <p class="mp">مثابر</p>
+                </div>
+            </ion-col>
+        </ion-row>
+
+        <ion-list no-lines class="menu2">
+            <button ion-item class="menubtn" (click)="opencontanct()">الاتصال بنا</button>
+            <!--<button ion-item class="menubtn">الاعدادات</button>-->
+            <button ion-item class="menubtn" (click)="openBank()">الحسابات البنكية</button>
+            <button ion-item class="menubtn" (click)="aboutApp()">عن التطبيق</button>
+            <button ion-item class="menubtn" (click)="terms()">الشروط والاحكام</button>
+            <button ion-item class="menubtn" (click)="edit()">تعديل الصفحه الشخصية</button>
+            <button ion-item class="menubtn" (click)="exit()">خروج </button>
+
+        </ion-list>
+    </ion-content>
+</ion-menu>
+<ion-nav [root]="rootPage" #nav></ion-nav>

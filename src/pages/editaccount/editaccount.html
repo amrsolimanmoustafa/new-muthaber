@@ -1,0 +1,35 @@
+
+<ion-header>
+
+
+    <ion-title><header name="تعديل البيانات الشخصية"></header></ion-title>
+
+
+</ion-header>
+
+
+<ion-content>
+    <div class="topdiv">
+
+        <div id="profileImage" >
+          <img *ngIf="image==''&&image==null"  height="25px" class="simg" (click)="profileImage()" src="assets/imgs/editicon.png" ></div>
+          <img *ngIf="image!=''"  height="25px" class="simg" (click)="profileImage()" src={{image}} >
+
+        </div>
+
+    <button ion-button class="upload" (click)="profileImage()" clear>تحميل الصوره الشخصيه</button>
+
+    <form #f="ngForm">
+      <ion-input [(ngModel)]="name" name="name" class="editinput" type="text" placeholder="اسم الكامل"></ion-input>
+     <!-- <ion-input  [(ngModel)]="phone" name="phone"class="editinput" type="text" placeholder="اسم المستخدم"></ion-input> -->
+     <ion-input  [(ngModel)]="phone" name="phone" class="editinput" type="tel" placeholder="رقم الهاتف" ></ion-input>
+     <ion-input [(ngModel)]="password" name="password" class="editinput" type="password" placeholder="كلمة المرور" required></ion-input>
+     <ion-input [(ngModel)]="password_confirm" name="password_confirm" class="editinput" type="password" placeholder="تاكيد كلمة المرور"></ion-input>
+    <p style="    color: red;
+    align-items: start;
+    margin-left: 46%;" id="passwordCheck">عفوا كلمة المرور غير متطابقة</p>
+     <ion-input [(ngModel)]="email" name="email" class="editinput" type="email" placeholder="البريد الالكترونى"></ion-input>
+
+       <button ion-button block  [disabled]="!f.valid" class="btn" (click)="home()">تعديل</button>
+   </form>
+</ion-content>
