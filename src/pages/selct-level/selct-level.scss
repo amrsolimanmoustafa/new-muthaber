@@ -1,0 +1,63 @@
+page-selct-level {
+.textPlace1 {
+    text-align: center;
+}
+.homeAPlus{
+		text-align: center;
+		padding-top: 2%;
+		img{
+			max-width: 25%;
+		}
+	}
+
+	.qTests{
+		padding-top: 20px;
+		text-align: -webkit-right;
+		.test{
+			padding: 5px;
+			padding-top: 10px;
+			color: #707070;
+			font-weight: 700;
+			.radio {
+					input {
+						display: none;
+						&:checked + .rStatus {
+							background-color: #6c6c6c;
+						}
+					}
+					.rStatus {
+						display: inline-block;
+						float: right;
+						margin-left: 10px;
+						width: 15px;
+						height: 15px;
+						border-radius: 50%;
+						border: 1px solid #6c6c6c;
+						margin-top: 5px;
+						transition: 0.5s background-color ease;
+					}
+				label {
+
+				}
+			}
+		}
+	}
+
+	.textDone{
+		z-index: 3;
+		text-align: center;
+		padding: 50px 15%;
+		padding-bottom: 0;
+		.btnGray{
+			font-size: 90%;
+			display: block;
+			padding: 6px 40px;
+			color: #fff;
+			background-color: #3c403f;
+			border-radius: 19px;
+			box-shadow: 0 10px 25px 0 rgba(0,0,0,0.23);
+			margin: 0 auto;
+			max-width: 240px;
+		}
+	}
+}

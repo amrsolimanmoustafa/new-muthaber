@@ -1,0 +1,124 @@
+page-english-test {
+p.toppar {
+    text-align: center;
+    font-size: x-large;
+}
+.bbc{
+    background-color : #017C9A;
+}
+ion-label.label.label-md {
+    font-size: larger;
+        white-space: normal;
+}
+label {
+    margin-left: 62%;
+}
+span.sp {
+    padding: 33px;
+}
+.qTitle{
+        text-align: center;
+        padding: 20px 0;
+        h1 {
+            color: #707070;
+            font-weight: 700;
+            &:before{
+                content: ' ';
+                background-color: #707070;
+                border-radius: 50%;
+                height: 13px;
+                width: 13px;
+                
+                margin-left: 10px;
+            }
+            &:after{
+                content: '?';
+                color: #017c9b;
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .qAnswers{
+        .answer{
+            padding: 5px;
+            color: #707070;
+            font-weight: 700;
+            .radio {
+                    input {
+                        display: none;
+                        &:checked + .rStatus {
+                            background-color: #6c6c6c;
+                        }
+                    }
+                    .rStatus {
+                        display: inline-block;
+                        float: right;
+                        margin-left: 10px;
+                        width: 15px;
+                        height: 15px;
+                        border-radius: 50%;
+                        border: 1px solid #6c6c6c;
+                        margin-top: 5px;
+                        transition: 0.5s background-color ease;
+                    }
+                label {
+
+                }
+            }
+        }
+    }
+
+    .testNav{
+        text-align: center;
+        padding-top: 50px;
+        color: #707070;
+        .qNext {
+            text-align: right;
+            width: 70px;
+            display: inline-block;
+            vertical-align: text-top;
+            &:before{
+                content: '\25B6';
+                font-size: 50px;
+                margin-right: -45px;
+                margin-top: -32px;
+                position: absolute;
+            }
+        }
+        .qPrev {
+            text-align: left;
+            width: 70px;
+            display: inline-block;
+            vertical-align: text-top;
+            &:after{
+                content: '\25C0';
+                font-size: 50px;
+                margin-right: 5px;
+                margin-top: -32px;
+                position: absolute;
+            }
+        }
+    }
+
+    .textDone{
+        z-index: 3;
+        position: absolute;
+        width: 100vw;
+        
+        text-align: center;
+        padding: 40px 15%;
+        left: 0;
+        right: 0;
+        .btnGray{
+            font-size: 90%;
+            display: block;
+            padding: 6px 40px;
+            color: #fff;
+            // font-weight: 700;
+            background-color: #3c403f;
+            border-radius: 19px;
+            box-shadow: 0 10px 25px 0 rgba(0,0,0,0.23);
+        }
+    }
+}

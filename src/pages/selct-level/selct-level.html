@@ -1,0 +1,36 @@
+<ion-header>
+ <header></header>
+</ion-header>
+
+<ion-content padding>
+	<div class="homeAPlus">
+	   <img src="assets/imgs/home_a_plus.png">
+	</div>
+
+	<div class="textPlace1">
+    	<span class="textStyle1">اختبار تحديد المستوى</span>
+  	</div>
+
+  	<div class="qTests">
+		<div class="test">
+			<div class="radio">
+				<input type="radio" id="test1" disabled name="test" checked>
+				<div class="rStatus"></div>
+				<label for="test1">مدة الإختبار 50 دقيقة</label>
+			</div>
+		</div>
+		<div class="test">
+			<div class="radio">
+				<input type="radio" id="test2" disabled name="test2" checked>
+				<div class="rStatus"></div>
+				<label for="test2">الإختبار عبارة عن 50 سؤال أختيار من متعدد</label>
+			</div>
+		</div>
+	</div>
+
+  	<div class="textDone">
+		<div class="btnGray" (click)="gotoTest()">
+			أبدأ
+		</div>
+	</div>
+</ion-content>

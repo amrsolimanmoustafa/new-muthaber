@@ -1,0 +1,39 @@
+<ion-header>
+ <header></header>
+</ion-header>
+
+<ion-content padding>
+	<div style="margin-top:70px;">
+<!--     <p class="toppar">الاختبار الاول</p>
+ -->
+
+    <ion-list *ngFor="let q of test_question;let i=index" radio-group>
+      <ion-list-header class="queslab">{{q.question}}<span style="color:#03A4CA;margin:0 5px">?</span>
+      </ion-list-header>
+
+      <ion-item class="answer">
+        <ion-label  class="answerlab">{{q.answer1}} </ion-label>
+        <ion-radio (click)="radio(q.answer1,i)"></ion-radio>
+      </ion-item>
+
+      <ion-item class="answer">
+        <ion-label  class="answerlab">{{q.answer2}} </ion-label>
+        <ion-radio (click)="radio(q.answer2,i)"></ion-radio>
+      </ion-item>
+
+      <ion-item class="answer">
+        <ion-label  class="answerlab" >{{q.answer3}} </ion-label>
+        <ion-radio (click)="radio(q.answer3,i)" ></ion-radio>
+      </ion-item>
+    </ion-list>
+
+
+
+  </div>
+  <div class="testNav" *ngIf="show">
+    <div class="qPrev" (click)="next()">
+      Next
+    </div>
+  </div>
+ <button class="bbc"  ion-button block (click)="finish()">finsih the test</button>
+</ion-content>
